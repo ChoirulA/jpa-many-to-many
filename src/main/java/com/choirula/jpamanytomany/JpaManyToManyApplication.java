@@ -26,7 +26,7 @@ public class JpaManyToManyApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception{
 		// Cleanup the tables
 		postRepository.deleteAllInBatch();
-		tagRepository.deleteAllInBatch();
+		tagRepository.deleteAllInBatch();	
 
 		// Create a Post
 		Post post = new Post("Hibernate Many to Many Example with Spring Boot",
